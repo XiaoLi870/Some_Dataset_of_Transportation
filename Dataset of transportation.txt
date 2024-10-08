@@ -1,0 +1,190 @@
+In this document, the URLs of transportation datasets are organized, covering various aspects of transportation research.
+
+——————————
+US Accidents (2016 - 2023)：https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
+这是一个覆盖美国49个州的全国性车祸数据集。事故数据是在2016年2月至2023年3月期间收集的，使用了多个提供流式交通事故（或事件）数据的API。这些API链接了各种捕获的交通数据，包括美国和州交通部、执法机构、交通摄像头和道路网络内的交通传感器。该数据集目前包含约770万条事故记录。
+US Accidents (2016 - 2023) 使用方法：https://zhuanlan.zhihu.com/p/138155340
+
+——————————
+City of New York Motor Vehicle Collisions - Crashes：https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes
+纽约市警察填写所有车辆碰撞的MV-104AN表格。MV-104AN是纽约州的一种表格，其中包含了交通碰撞的所有细节。收集非常基本的十字路口交通事故统计数据，包括事故、伤亡人数。
+
+——————————
+AVOID: Autonomous Vehicle Operation Incident Dataset：https://github.com/UCF-SST-Lab/AVOID-Autonomous-Vehicle-Operation-Incident-Dataset
+自动驾驶汽车运行事故数据集
+AVOID 说明：https://zhuanlan.zhihu.com/p/625826001
+
+——————————
+A matched case-control analysis of autonomous vs human-driven vehicle accidents：https://www.nature.com/articles/s41467-024-48526-4
+自动驾驶与人工驾驶车辆事故的匹配病例对照分析
+
+——————————
+UK Road Safety Data：https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data
+英国政府收集并发布（通常每年）有关全国交通事故的详细信息。这些信息包括但不限于地理位置，天气状况，车辆类型，伤亡人数和车辆机动性，这使其成为非常有趣且全面的分析和研究数据集。
+UK Road Safety Data 说明：https://www.heywhale.com/mw/dataset/5d91b8c3037db3002d3b6734
+
+——————————
+英格兰公路数据集 Highways England：https://webtris.highwaysengland.co.uk/
+简单粗暴的交通车流量数据库，可以很方便地得到各个检测点的车流量数据，且能很方便地浏览数据可用性，支持API批量下载。不足之处是数据类型单一（只有流量），且许多检测器有大量数据缺失。
+
+——————————
+PeMS 加州公路数据集 Caltrans Performance Measurement System：https://pems.dot.ca.gov/
+数据量非常大，数据库比较臃肿，不支持用代码自动化批量下载，但有用户界面可视的批量下载渠道。该数据库也有大量检测器有数据缺失，但他对缺失数据进行了填充。
+
+——————————
+纽约市出租车数据集：https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+黄色和绿色出租车行程记录包括记录上车和下车日期/时间、上车和下车地点、行程距离、分项票价、费率类型、付款类型和司机报告的乘客人数的字段。
+
+——————————
+旧金山湾区地铁客流量数据集：https://www.bart.gov/about/reports/ridership
+地铁客流量数据库，有不同的时间尺度：每月和每天。支持API自动化下载数据。不足之处是每日数据的记录方式比较简单粗暴，记录了每条客流数据的进站、出站、时间。因此在处理成OD（Origin Destination）矩阵的时候对算力要求较高。
+
+——————————
+美国航空客流抽样调查数据：https://transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FHK&QO_fu146_anzr=b4vtv0%20n0q%20Qr56v0n6v10%20f748rB
+非常庞大的数据库，需要对数据进行预处理：比如将每条客流量处理成OD矩阵。时间尺度是季度。不支持API自动化下载。
+在这个板块中无意中发现的与安全相关的数据，但还没研究：https://transtats.bts.gov/databases.asp?f7owrp6_VQ=E&f7owrp6_Qr5p=fnsr6B&Z1qr_VQF=D
+
+——————————
+美国地理信息统计数据：？？
+比较庞大的数据库。需要用地理信息系统软件（ArcGIS，QGIS等）读取，可以导出成CSV表格文件。记录了整个美国每个统计单位（Census Block Group，类似街区）
+
+——————————
+美国各行各业统计数据：https://www2.census.gov/
+可以直接下载，数据量庞大，比如https://www2.census.gov/geo/tiger/TIGER2019/TRACT/， 统计的是2019年各个州的每个统计单位（此处为Census Tract，粗于Census Block Group）的数据。
+
+——————————
+飞桨交通领域数据集集锦1：https://aistudio.baidu.com/projectdetail/3438634?channelType=0&channel=0
+飞桨交通领域数据集集锦2：https://zhuanlan.zhihu.com/p/608121043
+还没具体解析
+
+——————————
+NGSIM数据集：https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj/about_data
+所有数据均为在美国高速公路国道101上采集的实际运行轨迹数据。数据文件包含3个txt文档，三个文档对应三个不同的时段，每个时段为15分钟。广泛用于车辆跟驰换道等驾驶行为研究，交通流分析，微观交通模型构建，车辆运动轨迹预测，驾驶员意图识别，自动驾驶决策规划等。
+
+——————————
+HighD数据集：https://levelxdata.com/highd-dataset/
+由德国亚琛工业大学汽车工程研究所发布的HighD数据集，是德国高速公路的大型自然车辆轨迹数据，搜集自德国科隆附近的六个不同地点， 位置因车道数量和速度限制而异，记录的数据中包括轿车和卡车。数据集包括来自六个地点的11.5小时测量值和110000车辆，所测量的车辆总行驶里程为45000 km，还包括了5600条完整的变道记录。通过使用最先进的计算机视觉算法，定位误差通常小于十厘米。适用于驾驶员模型参数化、自动驾驶、交通模式分析等任务。
+
+——————————
+轨迹库 Mirror-Traffic：http://www.scenarios.cn/html/dataset.html
+由清华大学苏州汽车研究院和江苏智能网联汽车创新中心联合发布，从中国真实道路交通数据中，运用图像识别与追踪技术对真实道路图像中的交通参与物进行识别与跟踪，并对提取后的轨迹进行过滤与筛选，最终得到各类车辆、行人等轨迹数据。该数据集覆盖多种道路类型（匝道、直道、弯道、十字路口等）和多种交通流状态（车流量小、适中、拥堵等），数据中包含多种车辆类型和行人等，交通参与物轨迹精度可以达到厘米级，非常适合驾驶场景提取、驾驶场景生成、驾驶行为、意图预测类模型研发、自然驾驶行为的模仿学习、自动驾驶预测和规划算法的开发和验证、交通流（速度、密度）分析、微观交通模型仿真等研究。
+
+——————————
+上海出租车数据：？？
+数据集包括4千辆出租车24个小时（07年2月20日）的行驶数据，车辆行驶数据的采样时间间隔为1min，车辆轨迹数据包含：车辆ID-Time-经纬度-速度-是否载客。
+
+——————————
+法国环形道路车辆数据：https://vehicular-mobility-trace.github.io/
+数据集为法国克雷泰伊的一个环形道路上早上两小时（7.00-9.00）和晚上两小时（17.00-19.00）的车辆行驶数据，数据采样时间间隔为1s，车辆轨迹数据包含：车辆ID-时间-车辆类型-坐标-车辆速度。
+
+——————————
+芝加哥Divvy共享自行车骑行数据：https://divvybikes.com/system-data
+芝加哥市Divvy共享自行车2013至今的骑行使用数据，包括使用者性别、年龄、每次旅行的起点，目的地和时间戳。开始和结束时间、起点经纬度、重点经纬度等。
+
+——————————
+多伦多市共享自行车数据：https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/
+
+——————————
+滴滴盖亚数据集：已经没了
+包括城市交通指数数据集、驾驶行为数据集、POI检索数据集、网约车轨迹数据集、驾驶场景视频数据集等。数据质量很高，需要国内高校的邮箱注册并提交申请，一般1-2周批复。
+
+——————————
+深圳市政府数据开放平台：https://opendata.sz.gov.cn/
+各类数据 都有，交通相关的包括停车场数据、卡口过车数据、车流量数据、公交站点路线数据、营运车辆GPS数据、刷卡数据、街道实时数据、路段属性数据等等。
+
+——————————
+美国的数据开放平台：https://data.gov/
+288,289 datasets available
+
+——————————
+FlightWare：https://www.flightaware.com/
+航空数据大全
+
+——————————
+CitySim：https://github.com/UCF-SST-Lab/UCF-SST-CitySim1-Dataset
+随着无人机的普及和计算机视觉技术的发展，高精度航拍视角车辆轨迹数据成为了当下诸多热点的研究方向的基础，包括基于冲突的安全分析，驾驶行为建模，自动驾驶算法、主动交通安全和互联交通安全应用。 CitySim无人机车辆轨迹和数字孪生开源数据集。该数据集由美国中佛罗里达大学Dr. Aty团队的郑欧博士，岳李圣飒博士，博士生王子衿等人于2022年推出，并在持续更新中。数据集主页：https://github.com/ozheng1993/UCF-SST-CitySim-Dataset。CitySim数据集提供超过来自多个国家不同天气、不同地点的无人机航拍数据，时长总计超过1200分钟。道路类型丰富，包括高速公路基本路段、高速公路匝道汇入/汇出、城市快速路、合流分流交织区、信控交叉口、环岛等多个地点。冲突样本量丰富，驾驶行为高度异质化。每个数据点经过人工修正，以确保零错误。CitySim还是首个提供7个车辆关键点的数据集。CitySim数据集还提供拍地点的高精度3D仿真地图以支持数字孪生相关研究。地图基于GIS信息制作，支持Carla、Sumo和Unity等平台的仿真。此外，数据集还提供与轨迹对应的信号灯配时数据。完整数据访问，请向我们发送申请表至此电子邮件：citysim.ucfsst@gmail.com（在此下载表格：https://github.com/ozheng1993/UCF-SST-CitySim-Dataset/blob/main/asset/MainPage/Data_Request_Form.pdf）
+
+——————————
+自动驾驶数据集集锦：https://zhuanlan.zhihu.com/p/715622307
+
+——————————
+车辆碰撞数据集：？？
+
+
+——————————
+Automated Driving Crashes Dataset：https://www.kaggle.com/datasets/michaelbryantds/automated-driving-crashes
+
+——————————
+Urban Computing：https://www.microsoft.com/en-us/research/project/urban-computing/
+
+——————————
+Open Data for All New Yorkers：https://opendata.cityofnewyork.us/
+
+——————————
+15个开源最佳自动驾驶数据集：https://zhuanlan.zhihu.com/p/608072082
+
+——————————
+自动驾驶：驾驶行为数据集：https://zhuanlan.zhihu.com/p/561387661
+自动驾驶：定位与地图数据集：https://zhuanlan.zhihu.com/p/559016112
+自动驾驶：全景数据集：https://zhuanlan.zhihu.com/p/553898788
+自动驾驶：光流数据集：https://zhuanlan.zhihu.com/p/548858539
+自动驾驶：车道检测数据集：https://zhuanlan.zhihu.com/p/543462565
+自动驾驶：语义分割数据集：https://zhuanlan.zhihu.com/p/522121257
+自动驾驶：目标检测数据集：https://zhuanlan.zhihu.com/p/478763663；https://zhuanlan.zhihu.com/p/484911468；https://zhuanlan.zhihu.com/p/504766661
+
+——————————
+电动汽车充电需求时空预测数据集：https://github.com/IntelligentSystemsLab/ST-EVCDP
+电动汽车充电需求时空预测数据集数据集说明：https://zhuanlan.zhihu.com/p/664958659
+
+——————————
+交通网络数据集：https://github.com/bstabler/TransportationNetworks
+该交通网络数据集网站由交通网络核心团队和TRB网络建模委员会协力打造，主要运营维护成员包括Ben Stabler，Hillel Bar-Gera和Elizabeth Sall。该网站最早起源于2007年，运营者们在网址为http://www.bgu.ac.il/~bargera/tntp/的网站更新了一系列经典网络，如Sioux-Falls、Chicago Sketch、Winnipeg等。该网址还叙事生动地讲解了很多与交通配流相关的知识。
+交通网络数据集说明：https://zhuanlan.zhihu.com/p/420333562
+
+——————————
+高德开放平台：https://lbs.amap.com/api/webservice/guide/create-project/get-key
+高德实时路况数据获取教程1：https://www.jianshu.com/p/d6df941de08a
+高德实时路况数据获取教程2：https://github.com/vowers/amap_traffic/blob/master/geo_traffic.py
+
+——————————
+There are 25 accidents datasets available on data.world：https://data.world/datasets/accidents
+
+——————————
+Causes of Road Accidents：https://data.gov.sg/collections/573/view
+道路交通事故原因——按受伤严重程度划分的事故原因。此数据集显示了事故是否致命、涉及的人员以及事故的简要原因。
+
+——————————
+Road Traffic Accidents：https://www.kaggle.com/datasets/saurabhshahane/road-traffic-accidents
+该数据集是根据2017-20年道路交通事故的人工记录编制的。在数据编码过程中，所有敏感信息都被排除在外，最终有32个特征和12316个事故实例。然后对其进行预处理，并通过使用不同的机器学习分类算法对其进行分析来识别事故的主要原因。RTA Dataset.csv是预处理前的数据集，cleaned.csv是预处理后的数据集。
+
+——————————
+58 datasets about crashs in US but classification still needed：https://catalog.data.gov/dataset/?tags=crash
+
+——————————
+Traffic accidents dataset of many Cities：http://sciencepo.census.okfn.org/dataset/traffic-accidents.html
+
+——————————
+CTDOT Open Data：https://connecticut-ctdot.opendata.arcgis.com/datasets/CTDOT::person-school-bus/explore?location=0.048217%2C-15.927805%2C1.44
+School Bus related Connecticut crashes 2015 to present
+
+——————————
+Enhancing School Zone and School Bus Safety：https://search.dataone.org/view/sha256%3Aafaefb82a0c31c5e6fd197aa2d01ed25a802a4c1f29f1a8bfebe56eb6aac116b
+学校区域的安全问题一直是交通安全领域最重要的课题之一。本研究项目评估了学校区域不同道路对策的安全效果。尽管许多研究评估了各种交通控制设备（如标志、闪烁信标、速度监测显示器）的有效性，但缺乏探索可能对学区安全产生重大影响的不同道路对策的研究。在这个研究项目中，根据碰撞率，佛罗里达州奥兰治县和塞米诺尔县确定了最容易发生碰撞的学区，碰撞率被定义为每千英里每天行驶的车辆碰撞数。结果显示，韦斯特里奇中学和萨德勒小学是最容易发生车祸的两个学区。之后，在VISSIM中建立了一个微观模拟网络，以测试学校区域的不同道路对策。在应用不同的对策之前，网络根据交通量和旅行时间进行了校准和验证，以复制真实的现场。在微观模拟中实施了三种不同的对策——两步减速、减少车道数量和将双向左转车道（TWLTL）转换为升高的中央分隔带——并与现场条件进行了比较。对于每种对策，我们还运行了不同的子场景。在两步减速中，我们分析了由主道路最大限速定义的三个子场景。车道数量减少了25%、50%、75%和100%，因此本对策中使用了四个子场景进行分析。我们用升高的中央分隔带取代了TWLTL，因此所有左转车辆都在十字路口或中央分隔带左转。因此，分析了交叉口掉头和中央分隔带掉头两个子场景。替代安全措施在微观模拟软件中被广泛用作评估碰撞风险的指标，因为它不能直接测量交通事故。在这个研究项目中，使用了三种替代安全措施；其中两个是从时间碰撞（TTC）符号发展而来的。本研究项目采用了三种替代安全措施——碰撞暴露时间（TET）、碰撞时间积分（TIT）和（3）追尾碰撞暴露时间风险指数（TERCRI）作为安全评估指标。替代安全措施的值越高，表明碰撞风险越高。结果表明，与基本条件相比，两步减速和减少车道通行的所有子场景都显著降低了TET、TIT和TERCRI值。此外，两步减速和减少车道通行对策的组合优于其各自的效果以及基础条件。单因素方差分析显示，所有子情景之间存在显著差异。还进行了敏感性分析，以捕捉不同TTC阈值的不同子场景的影响。结果表明，对于TTC阈值的不同值（范围从1到3秒），两步减速和减少车道通道数量的所有子场景都显著降低了TET、TIT和TERCRI值。相反，将TWLTL转换为提高的中位数时，碰撞风险高于基础条件，因为TET、ITT和TERCRE的值远高于基础条件。因此，本研究项目的结果为交通和安全规划者提供了有益的见解。
+
+————————————
+Cleveland All Crashes 2017-2021：https://hub.arcgis.com/datasets/7c6b61c4a4aa494d9ff95a4a43d5e6d9_62/explore?location=41.494805%2C-81.706750%2C12.00&uiVersion=content-views
+城市规划人员建立了一个GIS模型，根据交通事故的严重程度、周围环境和街道使用者，帮助确定城市中交通安全改进的优先位置。
+
+————————————
+Ontario Road Safety Annual Report (ORSAR)：https://open.canada.ca/data/en/dataset/ca1046dc-dc69-4467-8113-8871c5ea7254
+安大略省道路安全年度报告（ORSAR）是道路安全统计数据的综合记录。主要数据来源是警方提供的碰撞报告。ORSAR报告由七个数据集组成：*第1章：提供关键道路安全统计数据的概要，如交通死亡、受伤、碰撞、持证驾驶员和注册车辆的总数。*第2章：按所涉道路使用者的严重程度和特征重点介绍交通伤亡情况。*第3章：概述安大略省道路上发生的碰撞类型。*第4章：确定安大略省碰撞的位置，并按市和县分列各类碰撞、死亡或受伤人数以及机动车登记数量。*第5章：检查安大略省机动车碰撞中涉及的车辆类型。*第6章：检查特别感兴趣的车辆，包括摩托车、校车、大型卡车、雪地摩托、越野车和自行车。*第7章：介绍安大略省与机动车使用有关的定罪、违法和停职数据。定罪按立法和定罪类型进行总结。有关此数据的更多信息，请访问以下网站：https://www.ontario.ca/document/ontario-road-safety-annual-reports-orsar
+
+————————————
+Bradford Council Personal Injury Collision Data：https://data.wu.ac.at/schema/data_gov_uk/MDczMjc3Y2UtM2RlMC00YzIyLTlhZjctZTUzZGZjMmQyZmQ1
+
+————————————
+The Center for Advanced Public Safety | The University of Alabama：https://www.caps.ua.edu/analytics/
+CAPS开发了一种独特的分析工具，称为关键分析报告环境（CARE），其目标是使决策者能够从数据中挖掘信息，而不需要复杂的数据库或统计专家的协助。CARE中封装的实现这一目标的软件组件包括最有用的分析功能（例如，频率分布、交叉制表、信息挖掘、统计显著性检验等）。它还封装了数据丰富和各种输出显示功能（例如仪表板、映射功能等）所需的软件组件。
+
+————————————
+Texas traffic crash data：https://cris.dot.state.tx.us/public/Query/app/home
