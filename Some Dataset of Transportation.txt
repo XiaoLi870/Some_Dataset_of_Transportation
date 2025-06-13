@@ -2,17 +2,17 @@ In this document, the URLs of transportation datasets are organized, covering va
 
 ——————————
 US Accidents (2016 - 2023)：https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
-这是一个覆盖美国49个州的全国性车祸数据集。事故数据是在2016年2月至2023年3月期间收集的，使用了多个提供流式交通事故（或事件）数据的API。这些API链接了各种捕获的交通数据，包括美国和州交通部、执法机构、交通摄像头和道路网络内的交通传感器。该数据集目前包含约770万条事故记录。
-US Accidents (2016 - 2023) 使用方法：https://zhuanlan.zhihu.com/p/138155340
+This is a nationwide car accident dataset covering 49 states in the United States. The accident data was collected between February 2016 and March 2023, using multiple APIs that provide streaming traffic accident (or event) data. These APIs link various captured traffic data, including US and state transportation departments, law enforcement agencies, traffic cameras, and traffic sensors within the road network. This dataset currently contains approximately 7.7 million accident records.
+Usage of US Accidents (2016-2023): https://zhuanlan.zhihu.com/p/138155340
 
 ——————————
 City of New York Motor Vehicle Collisions - Crashes：https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes
-纽约市警察填写所有车辆碰撞的MV-104AN表格。MV-104AN是纽约州的一种表格，其中包含了交通碰撞的所有细节。收集非常基本的十字路口交通事故统计数据，包括事故、伤亡人数。
+New York City police fill out the MV-104AN form for all vehicle collisions. MV-104AN is a table in New York State that contains all the details of traffic collisions. Collect very basic statistics on intersection traffic accidents, including accidents and casualties.
 
 ——————————
 AVOID: Autonomous Vehicle Operation Incident Dataset：https://github.com/UCF-SST-Lab/AVOID-Autonomous-Vehicle-Operation-Incident-Dataset
-自动驾驶汽车运行事故数据集
-AVOID 说明：https://zhuanlan.zhihu.com/p/625826001
+Autonomous vehicle operation accident data set
+AVOID Description：https://zhuanlan.zhihu.com/p/625826001
 
 ——————————
 A matched case-control analysis of autonomous vs human-driven vehicle accidents：https://www.nature.com/articles/s41467-024-48526-4
